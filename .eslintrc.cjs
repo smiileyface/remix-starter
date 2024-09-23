@@ -24,13 +24,14 @@ module.exports = {
   // Base config
   extends: ["eslint:recommended", "prettier"],
 
-  plugins: ["check-file"],
+  plugins: ["check-file", "n"],
 
   rules: {
     "prefer-arrow-callback": ["error"],
     "prefer-template": ["error"],
     semi: ["error"],
     quotes: ["error", "double"],
+    "n/no-process-env": ["error"],
     "check-file/filename-naming-convention": [
       "error",
       {

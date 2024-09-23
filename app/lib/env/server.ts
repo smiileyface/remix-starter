@@ -13,5 +13,6 @@ export const env = createEnv({
     process.exit(1);
   },
   emptyStringAsUndefined: true,
+  // eslint-disable-next-line n/no-process-env
   runtimeEnv: process.env,
 });
