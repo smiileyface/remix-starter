@@ -8,5 +8,3 @@ export const env = createEnv({
   emptyStringAsUndefined: true,
   runtimeEnv: process.env,
 });
-
-console.log("SERVER ->", env);
