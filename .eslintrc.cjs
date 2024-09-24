@@ -47,6 +47,15 @@ module.exports = {
         "app/!(routes)/**": "KEBAB_CASE",
       },
     ],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+        caughtErrorsIgnorePattern: "^_",
+      },
+    ],
   },
 
   overrides: [

@@ -11,7 +11,7 @@ import {
 import { useEffect } from "react";
 
 import { ToastContainer, toast as notify } from "react-toastify";
-import toastStyles from "react-toastify/dist/ReactToastify.css";
+import toastStyles from "react-toastify/dist/ReactToastify.css?url";
 import { getToast } from "remix-toast";
 
 import "./tailwind.css";

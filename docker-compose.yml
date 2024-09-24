@@ -11,13 +11,9 @@ services:
     ports:
       - ${DB_PORT}:5432
     volumes:
-      - db-data:/var/lib/postgresql/data
+      - ./db-data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD", "pg_isready"]
       timeout: 30s
       interval: 10s
       retries: 3
-
-  volumes:
-    db-data:
-      driver: local
