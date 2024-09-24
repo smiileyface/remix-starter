@@ -3,6 +3,7 @@ import { DiscordStrategy } from "remix-auth-discord";
 
 import db from "~/db";
 import { accounts, users } from "~/db/schema";
+import { User } from "~/db/schema/users";
 import { env } from "~/lib/env/server";
 
 export const discordStrategy = new DiscordStrategy(
@@ -12,7 +13,12 @@ export const discordStrategy = new DiscordStrategy(
     callbackURL: `${env.AUTH_URL}/auth/discord/callback`,
     scope: ["identify", "email"],
   },
-  async ({ accessToken, refreshToken, extraParams, profile }) => {
+  async ({
+    accessToken,
+    refreshToken,
+    extraParams,
+    profile,
+  }): Promise<User> => {
     let user = await db
       .select()
       .from(users)

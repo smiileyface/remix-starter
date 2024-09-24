@@ -6,6 +6,8 @@ import {
   uuid,
   varchar,
 } from "drizzle-orm/pg-core";
+import { createInsertSchema, createSelectSchema } from "drizzle-zod";
+import { z } from "zod";
 
 import users from "./users";
 
@@ -31,5 +33,11 @@ const accounts = pgTable(
     }),
   })
 );
+
+export const InsertAccountSchema = createInsertSchema(accounts);
+
+export const SelectAccountSchema = createSelectSchema(accounts);
+
+export type Account = z.infer<typeof SelectAccountSchema>;
 
 export default accounts;
