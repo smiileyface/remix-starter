@@ -35,7 +35,7 @@ module.exports = {
     "check-file/filename-naming-convention": [
       "error",
       {
-        "**/!(_index).{ts,tsx}": "KEBAB_CASE",
+        "**/(!(_))*.{ts,tsx}": "KEBAB_CASE",
       },
       {
         ignoreMiddleExtensions: true,
@@ -44,7 +44,7 @@ module.exports = {
     "check-file/folder-naming-convention": [
       "error",
       {
-        "app/**": "KEBAB_CASE",
+        "app/!(routes)/**": "KEBAB_CASE",
       },
     ],
   },
