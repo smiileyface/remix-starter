@@ -4,7 +4,7 @@ import { DiscordStrategy } from "remix-auth-discord";
 import db from "~/db";
 import { accounts, users } from "~/db/schema";
 import { User } from "~/db/schema/users";
-import { env } from "~/lib/env/server";
+import { env } from "~/lib/env/env.server";
 
 export const discordStrategy = new DiscordStrategy(
   {

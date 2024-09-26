@@ -11,7 +11,7 @@ import { isbot } from "isbot";
 import { PassThrough } from "node:stream";
 import { renderToPipeableStream } from "react-dom/server";
 
-import "~/lib/env/server";
+import "~/lib/env/env.server";
 
 const ABORT_DELAY = 5_000;
 

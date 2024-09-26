@@ -44,20 +44,14 @@ export default function Login() {
         <CardHeader className="text-center">
           <CardTitle className="text-3xl">Login</CardTitle>
           <CardDescription className="text-lg">
-            Choose a provider to login with:
+            Choose a provider to login with
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Form method="post" className="flex flex-col items-center gap-2">
             {providers.map(({ name, label }) => (
-              <Button
-                key={name}
-                type="submit"
-                name="provider"
-                value={name}
-                className="w-1/2"
-              >
-                {label}
+              <Button key={name} type="submit" name="provider" value={name}>
+                Login with {label}
               </Button>
             ))}
           </Form>

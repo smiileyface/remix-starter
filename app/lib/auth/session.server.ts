@@ -1,6 +1,6 @@
 import { createCookie } from "@remix-run/node";
 
-import { env } from "../env/server";
+import { env } from "../env/env.server";
 import createDrizzleSessionStorage from "./drizzle-session-storage.server";
 
 export const sessionStorage = createDrizzleSessionStorage(
