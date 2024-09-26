@@ -18,7 +18,9 @@ A basic Remix starter.
   - [prettier](https://www.npmjs.com/package/prettier)
     - [@trivago/prettier-plugin-sort-imports](https://npmjs.com/package/@trivago/prettier-plugin-sort-imports)
     - [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss) -[Automatic Class Sorting](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier#how-classes-are-sorted)
-- Environment Variables -[@t3-oss/env-core](https://npmjs.com/package/@t3-oss/env-core) - [Documentation](https://env.t3.gg/docs/core)
+- Environment Variables
+  - [@t3-oss/env-core](https://npmjs.com/package/@t3-oss/env-core)
+    - [Documentation](https://env.t3.gg/docs/core)
   - [cross-env](https://www.npmjs.com/package/cross-env)
 - Styles / UI
   - [tailwindcss](https://www.npmjs.com/package/tailwindcss)
@@ -29,7 +31,7 @@ A basic Remix starter.
 - Validation
   - [zod](https://www.npmjs.com/package/zod)
   - [@conform-to/zod](https://www.npmjs.com/package/@conform-to/zod)
-    = [Conform | Remix](https://conform.guide/integration/remix)
+    - [Conform | Remix](https://conform.guide/integration/remix)
   - [drizle-zod](https://npmjs.com/package/drizzle-zod)
     - [Drizze Zod Docs](https://orm.drizzle.team/docs/zod)
 - Forms
